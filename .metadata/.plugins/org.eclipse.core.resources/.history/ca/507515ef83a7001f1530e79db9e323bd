@@ -1,0 +1,22 @@
+package com.rest.user.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "tbl_usuario")
+
+public class Usuario {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int codUsuario;
+	private int dniUsuario;
+	private String nombreUsuario;
+	private String apellidoUsuario;
+	private String emailUsuario;
+	private String direccionUsuario;
+
+}

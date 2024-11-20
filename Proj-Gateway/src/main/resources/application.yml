@@ -1,0 +1,22 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultzone: http://localhost:8761/eureka/
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: servicio1
+          uri: http://localhost:9001
+          predicates:
+            - Path=/say/**
+        - id: servicio2
+          uri: http://localhost:9002
+          predicates:
+            - Path=/api/menu/**
+        - id: servicio3
+          uri: http://localhost:9003
+          predicates:
+           - Path=/api/cuenta/**
+           
