@@ -1,5 +1,6 @@
 package com.rest.user.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,12 +13,25 @@ import jakarta.persistence.Table;
 public class Usuario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "Cod_Usuario")
 	private int codUsuario;
+
+	@Column(name = "Dni_Usuario")
 	private int dniUsuario;
+
+	@Column(name = "Nombre_Usuario")
 	private String nombreUsuario;
+
+	@Column(name = "Apellido_Usuario")
 	private String apellidoUsuario;
+
+	@Column(name = "Email_Usuario")
 	private String emailUsuario;
+
+	@Column(name = "Direccion_Usuario")
 	private String direccionUsuario;
+
+	@Column(name = "Clave")
 	private String clave;
 	
 	public Usuario() {
