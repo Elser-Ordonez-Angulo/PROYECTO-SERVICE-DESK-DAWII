@@ -38,6 +38,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Service"/>
 			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Proj-RestMenu"/>
 			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-User"/>
 			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Gateway"/>

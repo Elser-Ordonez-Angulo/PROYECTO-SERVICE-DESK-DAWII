@@ -1,0 +1,5 @@
+package com.rest.user.feignuser;
+
+public class ReclamoFeignUsuario {
+
+}
