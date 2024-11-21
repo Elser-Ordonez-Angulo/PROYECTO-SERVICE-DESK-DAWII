@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;IMenuRepository.java&apos; to &apos;Rest-User/src/main/java/com.rest.user.repository&apos;&#x0D;&#x0A;- Original project: &apos;Proj-RestMenu&apos;&#x0D;&#x0A;- Destination element: &apos;Rest-User/src/main/java/com.rest.user.repository&apos;&#x0D;&#x0A;- Original element: &apos;com.restmenu.repository.IMenuRepository.java&apos;" description="Copy compilation unit" destination="=Rest-User/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.rest.user.repository" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.restmenu.repository{IMenuRepository.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1732203973965" units="1" version="1.0"/>
+</session>

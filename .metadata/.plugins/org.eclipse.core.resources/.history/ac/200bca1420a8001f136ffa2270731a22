@@ -1,0 +1,9 @@
+package com.rest.user.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.restmenu.model.Menu;
+
+public interface IUsuarioRepository extends JpaRepository<Menu, Integer> {
+
+}

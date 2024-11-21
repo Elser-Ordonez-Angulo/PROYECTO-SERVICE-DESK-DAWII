@@ -1,0 +1,17 @@
+package com.rest.user.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.rest.user.model.Usuario;
+
+
+
+public interface IUsuarioRepository extends JpaRepository<Usuario, Integer> {
+	
+	// Buscar un usuario por su DNI
+    Optional<Usuario> findByDniUsuario(int dniUsuario);
+
+    // Eliminar un usuario por su DNI
+    void deleteByDniUsuario(int dniUsuario);
+
+}
