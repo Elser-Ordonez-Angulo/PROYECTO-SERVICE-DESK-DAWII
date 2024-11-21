@@ -8,7 +8,7 @@ import com.rest.service.model.Reclamo;
 import com.rest.service.service.ReclamoService;
 
 @RestController
-@RequestMapping("/reclamos")
+@RequestMapping("api/reclamos")
 public class ReclamoController {
 
     private final ReclamoService service;
