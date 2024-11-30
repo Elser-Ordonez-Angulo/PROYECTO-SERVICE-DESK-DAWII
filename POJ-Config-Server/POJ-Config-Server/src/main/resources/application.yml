@@ -1,0 +1,22 @@
+server:
+  port: 8084
+spring:
+  application:
+   name: POJ-Config-Server
+  cloud:
+   config:
+    server:
+     git:
+       default-label: main
+       uri: https://github.com/Elser-Ordonez-Angulo/Configuration-Service-Desk.git
+       skipSsValidation: true
+       clone-on-start: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:*
+
+
