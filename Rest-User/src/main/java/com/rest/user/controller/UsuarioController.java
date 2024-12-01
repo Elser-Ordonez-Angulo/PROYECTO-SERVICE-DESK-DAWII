@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.rest.user.entity.Reclamo;
 import com.rest.user.model.Usuario;
 import com.rest.user.service.UsuarioService;
 
@@ -63,6 +64,12 @@ public class UsuarioController {
 	public void crearUsuario(@RequestBody Usuario usuario) {
 		uService.crearUsuario(usuario);
 	}
+	
+	@PostMapping("/createReclamo")
+	public void crearReclamo(@RequestBody Reclamo reclamo) {
+		uService.crearReclamo(reclamo);
+	}
+	
 	
 	
 	/////////////////ACTUALIZAR USUARIO//////////////

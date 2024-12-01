@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.rest.user.entity.Reclamo;
+import com.rest.user.feingclients.ServiceFeingUser;
 import com.rest.user.model.Usuario;
 import com.rest.user.repository.IUsuarioRepository;
 
@@ -15,6 +17,9 @@ import jakarta.transaction.Transactional;
 public class UsuarioService {
 	@Autowired
 	IUsuarioRepository usuarios;
+	
+	@Autowired
+	ServiceFeingUser serviceFeingUser;
 	
 	
 	public List<Usuario> listarUsuario(){
@@ -32,6 +37,10 @@ public class UsuarioService {
 	//Metodo para crear un usuario
 	public Usuario crearUsuario(Usuario usuario) {
 		return usuarios.save(usuario);
+	}
+	
+	public Reclamo crearReclamo (Reclamo reclamo) {
+		return serviceFeingUser.crearReclamo(reclamo);
 	}
 	
 	//Metodo para Actualizar USUARIO por DNI
