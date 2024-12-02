@@ -75,14 +75,19 @@ public class ReclamoController {
      * @param idReclamo ID del reclamo
      * @return Reclamo encontrado
      */
+ // Endpoint para obtener un reclamo por ID
     @GetMapping("/buscar/{idReclamo}")
-    public ResponseEntity<Reclamo> buscarReclamoPorId(@PathVariable int idReclamo) {
-        Reclamo reclamo = reclamoService.buscarReclamoPorId(idReclamo);
-        if (reclamo != null) {
-            return ResponseEntity.ok(reclamo);
-        } else {
-            return ResponseEntity.notFound().build();
+    public ReclamoResponseDto obtenerReclamoPorId(@PathVariable int idReclamo) {
+        // Llamamos al servicio para obtener el reclamo por ID
+        ReclamoResponseDto reclamoResponseDto = reclamoService.buscarReclamoPorId(idReclamo);
+        
+        // Si no se encuentra el reclamo, se puede lanzar un error o retornar un valor nulo
+        if (reclamoResponseDto == null) {
+            throw new RuntimeException("Reclamo no encontrado con el ID: " + idReclamo);
         }
+
+        // Retornamos el ReclamoResponseDto
+        return reclamoResponseDto;
     }
 
     /**
@@ -110,12 +115,12 @@ public class ReclamoController {
      */
     @DeleteMapping("/eliminar/{idReclamo}")
     public ResponseEntity<Void> eliminarReclamo(@PathVariable int idReclamo) {
-        Reclamo reclamo = reclamoService.buscarReclamoPorId(idReclamo);
+        Reclamo reclamo = reclamoService.eliminarReclamo(idReclamo);
         if (reclamo != null) {
-            reclamoService.eliminarReclamo(idReclamo);
-            return ResponseEntity.noContent().build();
+            return ResponseEntity.noContent().build();  // Reclamo eliminado correctamente
         } else {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.notFound().build();  // Reclamo no encontrado
         }
     }
+
 }

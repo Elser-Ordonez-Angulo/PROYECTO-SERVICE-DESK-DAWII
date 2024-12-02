@@ -119,10 +119,32 @@ public class ReclamoService {
      * @param idReclamo ID del reclamo
      * @return Reclamo encontrado
      */
-    public Reclamo buscarReclamoPorId(int idReclamo) {
-        Optional<Reclamo> reclamo = reclamoRepository.findById(idReclamo);
-        return reclamo.orElse(null);
+    public ReclamoResponseDto buscarReclamoPorId(int idReclamo) {
+        // Buscar el reclamo por ID
+        Optional<Reclamo> reclamoOptional = reclamoRepository.findById(idReclamo);
+
+        // Si el reclamo no existe, retornamos null
+        if (!reclamoOptional.isPresent()) {
+            return null; // O puedes lanzar una excepción si prefieres
+        }
+
+        // Obtener el reclamo
+        Reclamo reclamo = reclamoOptional.get();
+
+        // Mapeamos la entidad Reclamo a ReclamoResponseDto
+        ReclamoResponseDto dto = new ReclamoResponseDto(
+            reclamo.getIdReclamo(),
+            reclamo.getCodUsuario(),
+            reclamo.getDniUsuario(),
+            reclamo.getNombreUsuario(),
+            reclamo.getDescripcion(),
+            reclamo.getFechaReclamo(),
+            reclamo.getImportancia().getNombreImportancia()  // Aquí asignamos el nombre de la importancia
+        );
+
+        return dto;
     }
+
 
     /**
      * Actualizar un reclamo
@@ -143,7 +165,15 @@ public class ReclamoService {
      * Eliminar un reclamo
      * @param idReclamo ID del reclamo a eliminar
      */
-    public void eliminarReclamo(int idReclamo) {
-        reclamoRepository.deleteById(idReclamo);
+    public Reclamo eliminarReclamo(int idReclamo) {
+        Optional<Reclamo> reclamoOptional = reclamoRepository.findById(idReclamo);
+        if (reclamoOptional.isPresent()) {
+            Reclamo reclamo = reclamoOptional.get();
+            reclamoRepository.delete(reclamo);  // Elimina el reclamo de la base de datos
+            return reclamo;  // Devuelve el reclamo eliminado
+        } else {
+            return null;  // Si no se encuentra, retorna null
+        }
     }
+
 }
