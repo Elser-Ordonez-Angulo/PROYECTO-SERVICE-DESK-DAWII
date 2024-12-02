@@ -51,6 +51,22 @@ public class ReclamoController {
         List<Reclamo> reclamos = reclamoService.listarReclamos();
         return ResponseEntity.ok(reclamos);
     }
+    //listar por dni
+    @GetMapping("/listarPorDni/{dniUsuario}")
+    public ResponseEntity<List<Reclamo>> listarReclamosPorDni(@PathVariable int dniUsuario) {
+        try {
+            // Llamamos al servicio para listar los reclamos con el dniUsuario
+            List<Reclamo> reclamos = reclamoService.listarReclamosPorDni(dniUsuario);
+
+            if (reclamos.isEmpty()) {
+                return ResponseEntity.noContent().build(); // Si no hay reclamos, respondemos con código 204
+            }
+            return ResponseEntity.ok(reclamos); // Si hay reclamos, respondemos con 200 y la lista
+        } catch (IllegalArgumentException e) {
+            // Si el usuario no se encuentra
+            return ResponseEntity.badRequest().body(null); // Respuesta con error
+        }
+    }
 
     /**
      * Buscar un reclamo por ID

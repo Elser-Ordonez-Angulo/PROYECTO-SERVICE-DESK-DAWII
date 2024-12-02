@@ -32,10 +32,16 @@ public class ReclamoService {
         // Obtener los datos del usuario desde el DTO
         UsuarioDto usuarioDto = reclamoRequest.getUsuario();
 
-        // Validar usuario
+        // Validar que el usuario existe por DNI
         UsuarioDto usuario = usuarioFeignClient.obtenerUsuarioPorDni(usuarioDto.getDniUsuario());
         if (usuario == null) {
             throw new IllegalArgumentException("Usuario no encontrado con el DNI: " + usuarioDto.getDniUsuario());
+        }
+
+        // Validar que el codUsuario existe y coincide con el obtenido
+        if (usuario.getCodUsuario() != usuarioDto.getCodUsuario()) {
+            System.out.println("Usuario no registrado con el CodUsuario: " + usuarioDto.getCodUsuario());
+            return null; // Puedes devolver null o lanzar una excepción según lo que quieras hacer
         }
 
         // Crear el reclamo
@@ -45,8 +51,8 @@ public class ReclamoService {
         nuevoReclamo.setNombreUsuario(usuario.getNombreUsuario());
         nuevoReclamo.setDescripcion(reclamoRequest.getDescripcionReclamo());
 
-        // Convertir la fecha de String a LocalDate
-        nuevoReclamo.setFechaReclamo(LocalDate.parse(reclamoRequest.getFechaReclamo()));
+        // Asignar la fecha actual automáticamente
+        nuevoReclamo.setFechaReclamo(LocalDate.now());
 
         // Guardar el reclamo en la base de datos
         return reclamoRepository.save(nuevoReclamo);
@@ -59,6 +65,19 @@ public class ReclamoService {
      */
     public List<Reclamo> listarReclamos() {
         return reclamoRepository.findAll();
+    }
+    //listar reclamos por dni
+    public List<Reclamo> listarReclamosPorDni(int dniUsuario) {
+        // Obtener los datos del usuario desde el microservicio Rest-User
+        UsuarioDto usuarioDto = usuarioFeignClient.obtenerUsuarioPorDni(dniUsuario);
+
+        // Validar si el usuario existe
+        if (usuarioDto == null) {
+            throw new IllegalArgumentException("Usuario no encontrado con el DNI: " + dniUsuario);
+        }
+
+        // Obtener los reclamos asociados al usuario
+        return reclamoRepository.findByDniUsuario(dniUsuario);
     }
 
     /**
