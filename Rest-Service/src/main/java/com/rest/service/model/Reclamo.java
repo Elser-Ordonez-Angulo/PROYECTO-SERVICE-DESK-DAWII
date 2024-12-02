@@ -1,88 +1,81 @@
 package com.rest.service.model;
 
+import java.time.LocalDate;
+
 import jakarta.persistence.*;
-import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "reclamos")
+@Table(name = "tbl_reclamo")
 public class Reclamo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "id_reclamo")
+    private int idReclamo;
 
-    @Column(name = "usuario_id", nullable = false)
-    private String usuarioId;
+    @Column(name = "cod_usuario")
+    private int codUsuario;
 
-    @Column(nullable = false)
-    private String mensaje;
+    @Column(name = "dni_usuario")
+    private int dniUsuario;
 
-    private String categoria;
+    @Column(name = "nombre_usuario")
+    private String nombreUsuario;
 
-    private String estado;
+    @Column(name = "descripcion")
+    private String descripcion;
+    @Column(name = "fecha_reclamo")
+    private LocalDate fechaReclamo;  // Cambiado a LocalDate
 
-    @Column(name = "fecha_hora", nullable = false)
-    private LocalDateTime fechaHora;
+    public Reclamo() {
+    }
 
-	public Reclamo() {
-	}
+    // Getters y setters
+    public int getIdReclamo() {
+        return idReclamo;
+    }
+    
 
-	public Reclamo(Long id, String usuarioId, String mensaje, String categoria, String estado,
-			LocalDateTime fechaHora) {
-		super();
-		this.id = id;
-		this.usuarioId = usuarioId;
-		this.mensaje = mensaje;
-		this.categoria = categoria;
-		this.estado = estado;
-		this.fechaHora = fechaHora;
-	}
+    public void setIdReclamo(int idReclamo) {
+        this.idReclamo = idReclamo;
+    }
+    public LocalDate getFechaReclamo() {
+        return fechaReclamo;
+    }
 
-	public Long getId() {
-		return id;
-	}
+    public void setFechaReclamo(LocalDate fechaReclamo) {
+        this.fechaReclamo = fechaReclamo;
+    }
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public int getCodUsuario() {
+        return codUsuario;
+    }
 
-	public String getUsuarioId() {
-		return usuarioId;
-	}
+    public void setCodUsuario(int codUsuario) {
+        this.codUsuario = codUsuario;
+    }
 
-	public void setUsuarioId(String usuarioId) {
-		this.usuarioId = usuarioId;
-	}
+    public int getDniUsuario() {
+        return dniUsuario;
+    }
 
-	public String getMensaje() {
-		return mensaje;
-	}
+    public void setDniUsuario(int dniUsuario) {
+        this.dniUsuario = dniUsuario;
+    }
 
-	public void setMensaje(String mensaje) {
-		this.mensaje = mensaje;
-	}
+    public String getNombreUsuario() {
+        return nombreUsuario;
+    }
 
-	public String getCategoria() {
-		return categoria;
-	}
+    public void setNombreUsuario(String nombreUsuario) {
+        this.nombreUsuario = nombreUsuario;
+    }
 
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
-	}
+    public String getDescripcion() {
+        return descripcion;
+    }
 
-	public String getEstado() {
-		return estado;
-	}
-
-	public void setEstado(String estado) {
-		this.estado = estado;
-	}
-
-	public LocalDateTime getFechaHora() {
-		return fechaHora;
-	}
-
-	public void setFechaHora(LocalDateTime fechaHora) {
-		this.fechaHora = fechaHora;
-	}
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
 }

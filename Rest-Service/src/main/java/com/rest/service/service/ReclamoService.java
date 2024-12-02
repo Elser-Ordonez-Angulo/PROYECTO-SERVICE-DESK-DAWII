@@ -1,39 +1,96 @@
 package com.rest.service.service;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.rest.service.dto.Dto;
-import com.rest.service.feingclient.ProcesadorReclamosClient;
+import com.rest.service.dto.UsuarioDto;
+import com.rest.service.dtoRequest.ReclamoRequest;
+import com.rest.service.feingclient.UsuarioFeignClient;
 import com.rest.service.model.Reclamo;
 import com.rest.service.repository.ReclamoRepository;
-
-import java.time.LocalDateTime;
 
 @Service
 public class ReclamoService {
 
-    private final ReclamoRepository repository;
-    private final ProcesadorReclamosClient feignClient;
+    @Autowired
+    private UsuarioFeignClient usuarioFeignClient;
 
-    public ReclamoService(ReclamoRepository repository, ProcesadorReclamosClient feignClient) {
-        this.repository = repository;
-        this.feignClient = feignClient;
+    @Autowired
+    private ReclamoRepository reclamoRepository;
+
+    /**
+     * Crear un nuevo reclamo
+     * @param dniUsuario DNI del usuario
+     * @param descripcion Descripción del reclamo
+     * @return Reclamo creado
+     */
+    public Reclamo crearReclamo(ReclamoRequest reclamoRequest) {
+        // Obtener los datos del usuario desde el DTO
+        UsuarioDto usuarioDto = reclamoRequest.getUsuario();
+
+        // Validar usuario
+        UsuarioDto usuario = usuarioFeignClient.obtenerUsuarioPorDni(usuarioDto.getDniUsuario());
+        if (usuario == null) {
+            throw new IllegalArgumentException("Usuario no encontrado con el DNI: " + usuarioDto.getDniUsuario());
+        }
+
+        // Crear el reclamo
+        Reclamo nuevoReclamo = new Reclamo();
+        nuevoReclamo.setCodUsuario(usuario.getCodUsuario());
+        nuevoReclamo.setDniUsuario(usuario.getDniUsuario());
+        nuevoReclamo.setNombreUsuario(usuario.getNombreUsuario());
+        nuevoReclamo.setDescripcion(reclamoRequest.getDescripcionReclamo());
+
+        // Convertir la fecha de String a LocalDate
+        nuevoReclamo.setFechaReclamo(LocalDate.parse(reclamoRequest.getFechaReclamo()));
+
+        // Guardar el reclamo en la base de datos
+        return reclamoRepository.save(nuevoReclamo);
     }
 
-    public Reclamo registrarReclamo(Dto dto) {
-        // Crear el objeto Reclamo
-        Reclamo reclamo = new Reclamo();
-        reclamo.setUsuarioId(dto.getUsuarioId());
-        reclamo.setMensaje(dto.getMensaje());
-        reclamo.setCategoria(dto.getCategoria());
-        reclamo.setEstado("pendiente");
-        reclamo.setFechaHora(LocalDateTime.now());
 
-        // Guardar en la base de datos
-        Reclamo reclamoGuardado = repository.save(reclamo);
+    /**
+     * Listar todos los reclamos
+     * @return Lista de reclamos
+     */
+    public List<Reclamo> listarReclamos() {
+        return reclamoRepository.findAll();
+    }
 
-        // Enviar al siguiente microservicio
-        feignClient.enviarReclamo(reclamoGuardado);
+    /**
+     * Buscar un reclamo por ID
+     * @param idReclamo ID del reclamo
+     * @return Reclamo encontrado
+     */
+    public Reclamo buscarReclamoPorId(int idReclamo) {
+        Optional<Reclamo> reclamo = reclamoRepository.findById(idReclamo);
+        return reclamo.orElse(null);
+    }
 
-        return reclamoGuardado;
+    /**
+     * Actualizar un reclamo
+     * @param idReclamo ID del reclamo
+     * @param descripcion Nueva descripción del reclamo
+     * @return Reclamo actualizado
+     */
+    public Reclamo actualizarReclamo(int idReclamo, String descripcion) {
+        Reclamo reclamoExistente = reclamoRepository.findById(idReclamo).orElse(null);
+        if (reclamoExistente != null) {
+            reclamoExistente.setDescripcion(descripcion);
+            return reclamoRepository.save(reclamoExistente);
+        }
+        return null;
+    }
+
+    /**
+     * Eliminar un reclamo
+     * @param idReclamo ID del reclamo a eliminar
+     */
+    public void eliminarReclamo(int idReclamo) {
+        reclamoRepository.deleteById(idReclamo);
     }
 }
