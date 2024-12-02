@@ -26,6 +26,14 @@ public class Reclamo {
     private String descripcion;
     @Column(name = "fecha_reclamo")
     private LocalDate fechaReclamo;  // Cambiado a LocalDate
+    
+    @Column(name = "importancia")  // Nuevo campo
+    private String importancia;
+    
+    @Column(name = "tipo")  // Nuevo campo
+    private String tipo;
+    
+
 
     public Reclamo() {
     }
@@ -36,7 +44,22 @@ public class Reclamo {
     }
     
 
-    public void setIdReclamo(int idReclamo) {
+    public String getImportancia() {
+		return importancia;
+	}
+
+	public void setImportancia(String importancia) {
+		this.importancia = importancia;
+	}
+	public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+	public void setIdReclamo(int idReclamo) {
         this.idReclamo = idReclamo;
     }
     public LocalDate getFechaReclamo() {

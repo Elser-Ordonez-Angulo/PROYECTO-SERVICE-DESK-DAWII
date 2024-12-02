@@ -32,7 +32,7 @@ public class ReclamoService {
         // Obtener los datos del usuario desde el DTO
         UsuarioDto usuarioDto = reclamoRequest.getUsuario();
 
-        // Validar que el usuario existe por DNI
+        // Validar que el usuario existe por DNI a través de Feign Client
         UsuarioDto usuario = usuarioFeignClient.obtenerUsuarioPorDni(usuarioDto.getDniUsuario());
         if (usuario == null) {
             throw new IllegalArgumentException("Usuario no encontrado con el DNI: " + usuarioDto.getDniUsuario());
@@ -41,18 +41,22 @@ public class ReclamoService {
         // Validar que el codUsuario existe y coincide con el obtenido
         if (usuario.getCodUsuario() != usuarioDto.getCodUsuario()) {
             System.out.println("Usuario no registrado con el CodUsuario: " + usuarioDto.getCodUsuario());
-            return null; // Puedes devolver null o lanzar una excepción según lo que quieras hacer
+            return null; // Puedes devolver null o lanzar una excepción personalizada
         }
 
-        // Crear el reclamo
+        // Crear la instancia del reclamo
         Reclamo nuevoReclamo = new Reclamo();
-        nuevoReclamo.setCodUsuario(usuario.getCodUsuario());
-        nuevoReclamo.setDniUsuario(usuario.getDniUsuario());
-        nuevoReclamo.setNombreUsuario(usuario.getNombreUsuario());
-        nuevoReclamo.setDescripcion(reclamoRequest.getDescripcionReclamo());
+        nuevoReclamo.setCodUsuario(usuario.getCodUsuario()); // Asignar codUsuario
+        nuevoReclamo.setDniUsuario(usuario.getDniUsuario()); // Asignar dniUsuario
+        nuevoReclamo.setNombreUsuario(usuario.getNombreUsuario()); // Asignar nombreUsuario
+        nuevoReclamo.setDescripcion(reclamoRequest.getDescripcionReclamo()); // Asignar descripción del reclamo
 
         // Asignar la fecha actual automáticamente
         nuevoReclamo.setFechaReclamo(LocalDate.now());
+
+        // Asignar el tipo del reclamo desde el DTO
+        nuevoReclamo.setTipo(reclamoRequest.getTipo()); // Campo tipo
+        nuevoReclamo.setImportancia(reclamoRequest.getImportancia()); // Campo importancia
 
         // Guardar el reclamo en la base de datos
         return reclamoRepository.save(nuevoReclamo);
