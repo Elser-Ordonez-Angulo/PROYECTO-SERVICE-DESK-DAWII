@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.rest.service.dtoRequest.ReclamoRequest;
 import com.rest.service.model.Reclamo;
+import com.rest.service.responseDto.ReclamoResponseDto;
 import com.rest.service.service.ReclamoService;
 
 @RestController
@@ -47,10 +48,11 @@ public class ReclamoController {
      * @return Lista de reclamos
      */
     @GetMapping("/listar")
-    public ResponseEntity<List<Reclamo>> listarReclamos() {
-        List<Reclamo> reclamos = reclamoService.listarReclamos();
+    public ResponseEntity<List<ReclamoResponseDto>> listarReclamos() {
+        List<ReclamoResponseDto> reclamos = reclamoService.listarReclamos();
         return ResponseEntity.ok(reclamos);
     }
+
     //listar por dni
     @GetMapping("/listarPorDni/{dniUsuario}")
     public ResponseEntity<List<Reclamo>> listarReclamosPorDni(@PathVariable int dniUsuario) {

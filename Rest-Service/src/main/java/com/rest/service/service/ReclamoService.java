@@ -1,6 +1,7 @@
 package com.rest.service.service;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -13,6 +14,7 @@ import com.rest.service.feingclient.UsuarioFeignClient;
 import com.rest.service.model.Importancia;
 import com.rest.service.model.Reclamo;
 import com.rest.service.repository.ReclamoRepository;
+import com.rest.service.responseDto.ReclamoResponseDto;
 import com.rest.service.repository.ImportanciaRepository;
 
 @Service
@@ -59,12 +61,13 @@ public class ReclamoService {
         nuevoReclamo.setDniUsuario(usuario.getDniUsuario()); // Asignar dniUsuario
         nuevoReclamo.setNombreUsuario(usuario.getNombreUsuario()); // Asignar nombreUsuario
         nuevoReclamo.setDescripcion(reclamoRequest.getDescripcionReclamo()); // Asignar descripción del reclamo
-        //nuevoReclamo.setNombreImportancia(reclamoRequest.getNombreImportancia());
-        // Asignar la fecha actual automáticamente
-        nuevoReclamo.setFechaReclamo(LocalDate.now());
+        nuevoReclamo.setFechaReclamo(LocalDate.now()); // Asignar la fecha actual automáticamente
 
         // Asignar el tipo de importancia al reclamo
         nuevoReclamo.setImportancia(importancia);
+
+        // Asignar el nombre de la importancia al campo nombreImportancia
+        nuevoReclamo.setNombreImportancia(importancia.getNombreImportancia());
 
         // Guardar el reclamo en la base de datos
         return reclamoRepository.save(nuevoReclamo);
@@ -76,9 +79,27 @@ public class ReclamoService {
      * Listar todos los reclamos
      * @return Lista de reclamos
      */
-    public List<Reclamo> listarReclamos() {
-        return reclamoRepository.findAll();
+    public List<ReclamoResponseDto> listarReclamos() {
+        List<Reclamo> reclamos = reclamoRepository.findAll();
+        List<ReclamoResponseDto> responseDtos = new ArrayList<>();
+
+        for (Reclamo reclamo : reclamos) {
+            // Mapeamos la entidad Reclamo a ReclamoResponseDto
+            ReclamoResponseDto dto = new ReclamoResponseDto(
+                reclamo.getIdReclamo(),
+                reclamo.getCodUsuario(),
+                reclamo.getDniUsuario(),
+                reclamo.getNombreUsuario(),
+                reclamo.getDescripcion(),
+                reclamo.getFechaReclamo(),
+                reclamo.getImportancia().getNombreImportancia()  // Aquí asignamos el nombre de la importancia
+            );
+            responseDtos.add(dto);
+        }
+
+        return responseDtos;
     }
+
     //listar reclamos por dni
     public List<Reclamo> listarReclamosPorDni(int dniUsuario) {
         // Obtener los datos del usuario desde el microservicio Rest-User

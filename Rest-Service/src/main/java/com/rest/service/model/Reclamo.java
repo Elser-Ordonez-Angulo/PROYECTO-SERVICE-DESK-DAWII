@@ -3,6 +3,7 @@ package com.rest.service.model;
 import java.time.LocalDate;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import jakarta.persistence.*;
 
@@ -34,10 +35,22 @@ public class Reclamo {
     @JoinColumn(name = "id_importancia", referencedColumnName = "id_importancia", nullable = false)
     private Importancia importancia;
     
+    @Transient  // Esto es solo para ser incluido en la respuesta, no se guardará en la base de datos
+    @JsonProperty("nombre_importancia")  // Para mostrar este campo como 'nombre_importancia' en JSON
+    private String nombreImportancia;
+    
     public Reclamo() {
     }
 
- // Getters y setters
+ public String getNombreImportancia() {
+		return nombreImportancia;
+	}
+
+	public void setNombreImportancia(String nombreImportancia) {
+		this.nombreImportancia = nombreImportancia;
+	}
+
+	// Getters y setters
     public int getIdReclamo() {
         return idReclamo;
     }
