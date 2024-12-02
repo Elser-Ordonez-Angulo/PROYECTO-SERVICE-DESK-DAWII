@@ -2,6 +2,8 @@ package com.rest.service.model;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -26,42 +28,24 @@ public class Reclamo {
     private String descripcion;
     @Column(name = "fecha_reclamo")
     private LocalDate fechaReclamo;  // Cambiado a LocalDate
+   
+    @ManyToOne
+    @JsonIgnore
+    @JoinColumn(name = "id_importancia", referencedColumnName = "id_importancia", nullable = false)
+    private Importancia importancia;
     
-    @Column(name = "importancia")  // Nuevo campo
-    private String importancia;
-    
-    @Column(name = "tipo")  // Nuevo campo
-    private String tipo;
-    
-
-
     public Reclamo() {
     }
 
-    // Getters y setters
+ // Getters y setters
     public int getIdReclamo() {
         return idReclamo;
     }
-    
 
-    public String getImportancia() {
-		return importancia;
-	}
-
-	public void setImportancia(String importancia) {
-		this.importancia = importancia;
-	}
-	public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-	public void setIdReclamo(int idReclamo) {
+    public void setIdReclamo(int idReclamo) {
         this.idReclamo = idReclamo;
     }
+
     public LocalDate getFechaReclamo() {
         return fechaReclamo;
     }
@@ -101,4 +85,13 @@ public class Reclamo {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
+	public Importancia getImportancia() {
+		return importancia;
+	}
+
+	public void setImportancia(Importancia importancia) {
+		this.importancia = importancia;
+	}
+
 }

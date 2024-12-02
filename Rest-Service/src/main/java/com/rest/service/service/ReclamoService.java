@@ -10,8 +10,10 @@ import org.springframework.stereotype.Service;
 import com.rest.service.dto.UsuarioDto;
 import com.rest.service.dtoRequest.ReclamoRequest;
 import com.rest.service.feingclient.UsuarioFeignClient;
+import com.rest.service.model.Importancia;
 import com.rest.service.model.Reclamo;
 import com.rest.service.repository.ReclamoRepository;
+import com.rest.service.repository.ImportanciaRepository;
 
 @Service
 public class ReclamoService {
@@ -21,6 +23,9 @@ public class ReclamoService {
 
     @Autowired
     private ReclamoRepository reclamoRepository;
+    
+    @Autowired
+    private ImportanciaRepository tipoRepository;
 
     /**
      * Crear un nuevo reclamo
@@ -40,9 +45,13 @@ public class ReclamoService {
 
         // Validar que el codUsuario existe y coincide con el obtenido
         if (usuario.getCodUsuario() != usuarioDto.getCodUsuario()) {
-            System.out.println("Usuario no registrado con el CodUsuario: " + usuarioDto.getCodUsuario());
-            return null; // Puedes devolver null o lanzar una excepción personalizada
+            throw new IllegalArgumentException("Usuario no registrado con el CodUsuario: " + usuarioDto.getCodUsuario());
         }
+
+        // Obtener el tipo de importancia desde el repositorio
+        Importancia importancia = tipoRepository.findById(reclamoRequest.getIdImportancia())
+                .orElseThrow(() -> new IllegalArgumentException(
+                        "Tipo de importancia no encontrado con ID: " + reclamoRequest.getIdImportancia()));
 
         // Crear la instancia del reclamo
         Reclamo nuevoReclamo = new Reclamo();
@@ -50,17 +59,17 @@ public class ReclamoService {
         nuevoReclamo.setDniUsuario(usuario.getDniUsuario()); // Asignar dniUsuario
         nuevoReclamo.setNombreUsuario(usuario.getNombreUsuario()); // Asignar nombreUsuario
         nuevoReclamo.setDescripcion(reclamoRequest.getDescripcionReclamo()); // Asignar descripción del reclamo
-
+        //nuevoReclamo.setNombreImportancia(reclamoRequest.getNombreImportancia());
         // Asignar la fecha actual automáticamente
         nuevoReclamo.setFechaReclamo(LocalDate.now());
 
-        // Asignar el tipo del reclamo desde el DTO
-        nuevoReclamo.setTipo(reclamoRequest.getTipo()); // Campo tipo
-        nuevoReclamo.setImportancia(reclamoRequest.getImportancia()); // Campo importancia
+        // Asignar el tipo de importancia al reclamo
+        nuevoReclamo.setImportancia(importancia);
 
         // Guardar el reclamo en la base de datos
         return reclamoRepository.save(nuevoReclamo);
     }
+
 
 
     /**

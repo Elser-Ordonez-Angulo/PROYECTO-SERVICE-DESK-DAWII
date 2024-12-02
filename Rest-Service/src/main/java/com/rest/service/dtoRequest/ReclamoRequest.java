@@ -3,12 +3,10 @@ package com.rest.service.dtoRequest;
 import com.rest.service.dto.UsuarioDto;
 
 public class ReclamoRequest {
-    private UsuarioDto usuario; // UsuarioDTO
+    private UsuarioDto usuario; // UsuarioDTO para la información del usuario
     private String descripcionReclamo; // Descripción del reclamo
-    private String fechaReclamo; // Fecha del reclamo (puedes usar Date o String)}
-    private String importancia;
-    private String tipo; //campo tipo para decir si va para suport o para developers
-    
+    private int idImportancia; // ID del tipo de importancia
+    private String nombreImportancia; // Campo tipo para indicar si va a soporte o a desarrolladores
 
     // Getters y setters
     public UsuarioDto getUsuario() {
@@ -19,7 +17,15 @@ public class ReclamoRequest {
         this.usuario = usuario;
     }
 
-    public String getDescripcionReclamo() {
+    public String getNombreImportancia() {
+		return nombreImportancia;
+	}
+
+	public void setNombreImportancia(String nombreImportancia) {
+		this.nombreImportancia = nombreImportancia;
+	}
+
+	public String getDescripcionReclamo() {
         return descripcionReclamo;
     }
 
@@ -27,25 +33,13 @@ public class ReclamoRequest {
         this.descripcionReclamo = descripcionReclamo;
     }
 
-    public String getFechaReclamo() {
-        return fechaReclamo;
+    public int getIdImportancia() {
+        return idImportancia;
     }
 
-    public void setFechaReclamo(String fechaReclamo) {
-        this.fechaReclamo = fechaReclamo;
-    }
-    public String getImportancia() {
-        return importancia;
+    public void setIdImportancia(int idImportancia) {
+        this.idImportancia = idImportancia;
     }
 
-    public void setImportancia(String importancia) {
-        this.importancia = importancia;
-    }
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
+    
 }
