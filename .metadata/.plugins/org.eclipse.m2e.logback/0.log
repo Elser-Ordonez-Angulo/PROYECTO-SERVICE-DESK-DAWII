@@ -1553,3 +1553,32 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2024-12-01 18:51:29,104 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-12-01 18:51:29,107 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-12-01 18:51:29,110 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Operator\src\test\resources
+2024-12-02 11:07:01,618 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-12-02 11:07:32,423 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-02 11:07:32,462 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-02 11:07:32,467 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Eureka\src\test\resources
+2024-12-02 11:07:40,010 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-12-02 11:07:40,029 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-02 11:07:40,033 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Gateway\src\test\resources
+2024-12-02 11:07:53,928 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-02 11:07:53,977 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-02 11:07:53,983 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\POJ-Config-Server\src\test\resources
+2024-12-02 11:08:02,478 [Worker-9: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rest.operator:Rest-Operator:0.0.1-SNAPSHOT @ D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Operator\pom.xml.
+2024-12-02 11:08:06,857 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-02 11:08:06,971 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-02 11:08:06,981 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Operator\src\test\resources
+2024-12-02 11:08:10,879 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-02 11:08:10,901 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-02 11:08:10,910 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-User\src\test\resources
+2024-12-02 11:08:14,023 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-02 11:08:14,025 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-02 11:08:14,031 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Operator\src\test\resources
+2024-12-02 11:11:44,425 [Worker-17: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rest.service:Rest-Service:0.0.1-SNAPSHOT @ D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Service\pom.xml.
+2024-12-02 11:11:49,164 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Service\src\test\resources
+2024-12-02 11:11:50,279 [Worker-18: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.rest.service:Rest-Service:0.0.1-SNAPSHOT @ D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Service\pom.xml.
+2024-12-02 11:11:54,587 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-12-02 11:11:54,601 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-02 11:11:54,609 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Service\src\test\resources
+2024-12-02 11:12:35,179 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-02 11:12:35,181 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-02 11:12:35,185 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Service\src\test\resources

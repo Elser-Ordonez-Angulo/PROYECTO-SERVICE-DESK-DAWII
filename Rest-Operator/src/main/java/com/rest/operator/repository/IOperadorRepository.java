@@ -1,5 +1,11 @@
 package com.rest.operator.repository;
 
-public interface IOperadorRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.rest.operator.model.Operadores;
+
+
+
+public interface IOperadorRepository extends JpaRepository<Operadores, Integer>{
 
 }
