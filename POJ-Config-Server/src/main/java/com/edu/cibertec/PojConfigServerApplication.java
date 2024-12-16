@@ -10,6 +10,7 @@ public class PojConfigServerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PojConfigServerApplication.class, args);
+		System.out.println("CONFIG-SERVER CARGADO CORRECTAMENTE");
 	}
 
 }

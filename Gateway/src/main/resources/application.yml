@@ -1,22 +1,6 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultzone: http://localhost:8761/eureka/
-
 spring:
-  cloud:
-    gateway:
-      routes:
-        - id: rest-user
-          uri: http://localhost:9002
-          predicates:
-            - Path=/api/usuario/**
-        - id: servicio2
-          uri: http://localhost:9003
-          predicates:
-            - Path=api/reclamos**
-#        - id: servicio3
-#          uri: http://localhost:9003
-#          predicates:
-#           - Path=/api/cuenta/**
-           
+    application:
+         name: Gateway
+    config:
+      import:
+        optional:configserver:http://localhost:8084
