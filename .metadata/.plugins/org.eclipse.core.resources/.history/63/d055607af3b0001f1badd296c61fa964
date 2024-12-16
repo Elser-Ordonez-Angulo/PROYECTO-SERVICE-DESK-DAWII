@@ -1,0 +1,16 @@
+package com.rest.operator.feingclient;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+
+
+//Define el microservicio que consumirás
+@FeignClient(name = "rest-user", url = "http://localhost:9004/api/usuario")
+
+public interface OperatorFeignService {
+	// Método para obtener servicio por ID (lo adaptamos a tu ruta)
+    @GetMapping("/buscar/{idReclamo}")
+    Reclamo obtenerServicioPorId(@PathVariable("idServicio") int idServicio);
+}

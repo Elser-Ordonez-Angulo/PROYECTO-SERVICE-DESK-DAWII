@@ -1,0 +1,12 @@
+package com.rest.user.feingclients;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.PostMapping;
+
+@FeignClient(name = "Rest-Service", url = "http://localhost:9003")
+
+public class ServiceFeingUser {
+	@PostMapping("/api/cuenta/createCta")
+	Service  crearCuenta(@RequestBody Cuenta cuenta);
+
+}

@@ -1,0 +1,62 @@
+package com.rest.operator.service;
+
+import com.rest.operator.dto.OperacionDTO;
+import com.rest.operator.dto.ReclamoResponseDto;
+import com.rest.operator.feingclient.OperatorFeignService;
+import com.rest.operator.model.Operacion;
+import com.rest.operator.model.Operadores;
+import com.rest.operator.repository.IEspecialidadRepository;
+import com.rest.operator.repository.IOperacionRepository;
+import com.rest.operator.repository.IOperadorRepository;
+import com.rest.operator.model.Especialidad;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class OperacionService {
+
+    @Autowired
+    private IOperacionRepository operacionRepository;
+
+    @Autowired
+    private OperatorFeignService operatorFeignService;
+
+    @Autowired
+    private IOperadorRepository operadoresRepository;
+
+    @Autowired
+    private IEspecialidadRepository especialidadRepository;
+
+    public Operacion crearOperacion(OperacionDTO operacionDTO) {
+
+        // Obtener los datos del reclamo desde el FeignClient
+        ReclamoResponseDto reclamoResponse = operatorFeignService.obtenerReclamoPorId(operacionDTO.getIdReclamo());
+
+        // Mapear el DTO de operación a entidad Operacion
+        Operacion operacion = new Operacion();
+        operacion.setDescripcion(operacionDTO.getDescripcion());
+        operacion.setFechaRecepcion(operacionDTO.getFechaRecepcion());
+
+        // Obtener Operador y Especialidad por sus IDs
+        Operadores operador = operadoresRepository.findById(operacionDTO.getDniOperador())
+                .orElseThrow(() -> new RuntimeException("Operador no encontrado"));
+        Especialidad especialidad = especialidadRepository.findById(operacionDTO.getNombreEspecialidad())
+                .orElseThrow(() -> new RuntimeException("Especialidad no encontrada"));
+
+        operacion.setOperador(operador);
+        operacion.setEspecialidad(especialidad);
+
+        // Asignar datos del reclamo obtenidos por FeignClient
+        operacion.setReclamo(new Reclamo());
+        operacion.getReclamo().setIdReclamo(reclamoResponse.getIdReclamo());
+        operacion.getReclamo().setCodUsuario(reclamoResponse.getCodUsuario());
+        operacion.getReclamo().setDniUsuario(reclamoResponse.getDniUsuario());
+        operacion.getReclamo().setNombreUsuario(reclamoResponse.getNombreUsuario());
+        operacion.getReclamo().setFechaReclamo(reclamoResponse.getFechaReclamo());
+        operacion.getReclamo().setNombreImportancia(reclamoResponse.getNombreImportancia());
+
+        // Guardar la operación en la base de datos
+        return operacionRepository.save(operacion);
+    }
+}
