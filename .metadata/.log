@@ -7940,7 +7940,11 @@ Binding(CTRL+SHIFT+C,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+<<<<<<< HEAD
 !SESSION 2024-12-14 17:42:37.532 -----------------------------------------------
+=======
+!SESSION 2024-12-06 17:22:19.253 -----------------------------------------------
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 eclipse.buildId=4.23.1.202406150140
 java.version=21.0.3
 java.vendor=Eclipse Adoptium
@@ -7948,12 +7952,21 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
 Framework arguments:  -product org.springframework.boot.ide.branding.sts4
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
 
+<<<<<<< HEAD
 !ENTRY ch.qos.logback.classic 1 0 2024-12-14 17:42:45.619
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
 !ENTRY org.eclipse.core.resources 4 567 2024-12-14 17:42:59.591
 !MESSAGE Workspace restored, but some problems occurred.
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.591
+=======
+!ENTRY ch.qos.logback.classic 1 0 2024-12-06 17:22:33.556
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 4 567 2024-12-06 17:23:31.083
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.083
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Could not read metadata for '.org.eclipse.egit.core.cmp'.
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/.org.eclipse.egit.core.cmp)[567]: java.lang.Exception: The project description file (.project) for '.org.eclipse.egit.core.cmp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8005,7 +8018,11 @@ org.eclipse.core.internal.resources.ResourceException(/.org.eclipse.egit.core.cm
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.605
+=======
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.102
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE The project description file (.project) for '.org.eclipse.egit.core.cmp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
 !STACK 0
 java.lang.Exception: The project description file (.project) for '.org.eclipse.egit.core.cmp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8057,7 +8074,11 @@ java.lang.Exception: The project description file (.project) for '.org.eclipse.e
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.606
+=======
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.103
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Could not read metadata for 'Eureka'.
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/Eureka)[567]: java.lang.Exception: The project description file (.project) for 'Eureka' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8109,7 +8130,11 @@ org.eclipse.core.internal.resources.ResourceException(/Eureka)[567]: java.lang.E
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.612
+=======
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.111
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE The project description file (.project) for 'Eureka' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
 !STACK 0
 java.lang.Exception: The project description file (.project) for 'Eureka' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8161,7 +8186,11 @@ java.lang.Exception: The project description file (.project) for 'Eureka' is mis
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.612
+=======
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.117
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Could not read metadata for 'Gateway'.
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/Gateway)[567]: java.lang.Exception: The project description file (.project) for 'Gateway' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8213,7 +8242,11 @@ org.eclipse.core.internal.resources.ResourceException(/Gateway)[567]: java.lang.
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.613
+=======
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.118
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE The project description file (.project) for 'Gateway' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
 !STACK 0
 java.lang.Exception: The project description file (.project) for 'Gateway' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8265,7 +8298,11 @@ java.lang.Exception: The project description file (.project) for 'Gateway' is mi
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.618
+=======
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.126
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Could not read metadata for 'Identity-Service'.
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/Identity-Service)[567]: java.lang.Exception: The project description file (.project) for 'Identity-Service' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8317,7 +8354,11 @@ org.eclipse.core.internal.resources.ResourceException(/Identity-Service)[567]: j
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.619
+=======
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.127
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE The project description file (.project) for 'Identity-Service' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
 !STACK 0
 java.lang.Exception: The project description file (.project) for 'Identity-Service' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8369,7 +8410,11 @@ java.lang.Exception: The project description file (.project) for 'Identity-Servi
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.621
+=======
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.130
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Could not read metadata for 'POJ-Config-Server'.
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/POJ-Config-Server)[567]: java.lang.Exception: The project description file (.project) for 'POJ-Config-Server' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8421,7 +8466,11 @@ org.eclipse.core.internal.resources.ResourceException(/POJ-Config-Server)[567]: 
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.621
+=======
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.131
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE The project description file (.project) for 'POJ-Config-Server' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
 !STACK 0
 java.lang.Exception: The project description file (.project) for 'POJ-Config-Server' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8473,7 +8522,11 @@ java.lang.Exception: The project description file (.project) for 'POJ-Config-Ser
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.621
+=======
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.131
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Could not read metadata for 'Proj-Gateway'.
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/Proj-Gateway)[567]: java.lang.Exception: The project description file (.project) for 'Proj-Gateway' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8525,7 +8578,11 @@ org.eclipse.core.internal.resources.ResourceException(/Proj-Gateway)[567]: java.
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.622
+=======
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.132
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE The project description file (.project) for 'Proj-Gateway' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
 !STACK 0
 java.lang.Exception: The project description file (.project) for 'Proj-Gateway' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8577,7 +8634,11 @@ java.lang.Exception: The project description file (.project) for 'Proj-Gateway' 
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.623
+=======
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.132
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Could not read metadata for 'Rest-Operator'.
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/Rest-Operator)[567]: java.lang.Exception: The project description file (.project) for 'Rest-Operator' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8629,7 +8690,11 @@ org.eclipse.core.internal.resources.ResourceException(/Rest-Operator)[567]: java
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.624
+=======
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.133
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE The project description file (.project) for 'Rest-Operator' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
 !STACK 0
 java.lang.Exception: The project description file (.project) for 'Rest-Operator' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8681,7 +8746,11 @@ java.lang.Exception: The project description file (.project) for 'Rest-Operator'
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.624
+=======
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.133
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Could not read metadata for 'Rest-Service'.
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/Rest-Service)[567]: java.lang.Exception: The project description file (.project) for 'Rest-Service' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8733,7 +8802,11 @@ org.eclipse.core.internal.resources.ResourceException(/Rest-Service)[567]: java.
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.630
+=======
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.140
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE The project description file (.project) for 'Rest-Service' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
 !STACK 0
 java.lang.Exception: The project description file (.project) for 'Rest-Service' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8785,7 +8858,11 @@ java.lang.Exception: The project description file (.project) for 'Rest-Service' 
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.630
+=======
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.141
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Could not read metadata for 'Rest-Technical-Support'.
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/Rest-Technical-Support)[567]: java.lang.Exception: The project description file (.project) for 'Rest-Technical-Support' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8837,7 +8914,11 @@ org.eclipse.core.internal.resources.ResourceException(/Rest-Technical-Support)[5
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.631
+=======
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.141
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE The project description file (.project) for 'Rest-Technical-Support' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
 !STACK 0
 java.lang.Exception: The project description file (.project) for 'Rest-Technical-Support' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8889,7 +8970,11 @@ java.lang.Exception: The project description file (.project) for 'Rest-Technical
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.631
+=======
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.141
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Could not read metadata for 'Rest-User'.
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/Rest-User)[567]: java.lang.Exception: The project description file (.project) for 'Rest-User' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8941,7 +9026,11 @@ org.eclipse.core.internal.resources.ResourceException(/Rest-User)[567]: java.lan
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+<<<<<<< HEAD
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-14 17:42:59.631
+=======
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-12-06 17:23:31.141
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE The project description file (.project) for 'Rest-User' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
 !STACK 0
 java.lang.Exception: The project description file (.project) for 'Rest-User' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -8994,6 +9083,7 @@ java.lang.Exception: The project description file (.project) for 'Rest-User' is 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 
+<<<<<<< HEAD
 !ENTRY ch.qos.logback.classic 1 0 2024-12-14 17:43:03.862
 !MESSAGE Logback config file: D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
 
@@ -9008,6 +9098,22 @@ java.lang.Exception: The project description file (.project) for 'Rest-User' is 
 !MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-14 17:43:22.954
+=======
+!ENTRY ch.qos.logback.classic 1 0 2024-12-06 17:23:36.959
+!MESSAGE Logback config file: D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-12-06 17:23:39.318
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-12-06 17:23:39.318
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-12-06 17:23:40.990
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-12-06 17:23:40.990
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-06 17:23:58.280
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
 START:
 C:\Users\USUARIO\Documents\IDESPROGRAMAS\sts-4.23.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
@@ -9018,11 +9124,16 @@ C:\Users\USUARIO\Documents\IDESPROGRAMAS\sts-4.23.1.RELEASE\plugins\org.springfr
 -XX:TieredStopAtLevel=1
 -Xlog:jni+resolve=off
 -Dspring.config.location=file:C:\Users\USUARIO\Documents\IDESPROGRAMAS\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+<<<<<<< HEAD
 -XX:ErrorFile=D:/APLICACIONES WEB II/PROYECTO SERVICE DESK-DAWII/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1734216202954
+=======
+-XX:ErrorFile=D:/APLICACIONES WEB II/PROYECTO SERVICE DESK-DAWII/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1733523838280
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
 --languageserver.hover-timeout=225
 END
 
+<<<<<<< HEAD
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-14 17:43:22.954
 !MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
 
@@ -9030,12 +9141,22 @@ END
 !MESSAGE Started org.springframework.tooling.boot.ls LS process 2236
 
 !ENTRY org.eclipse.egit.ui 2 0 2024-12-14 17:43:27.680
+=======
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:23:58.280
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-06 17:23:58.328
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 7320
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-06 17:24:07.592
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\USUARIO'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-14 17:45:34.045
 !MESSAGE Classpath changed for project: Eureka
 
@@ -9064,6 +9185,96 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 !MESSAGE executing callback sts4.classpath.WtViAFPR FAILED
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-12-14 17:45:45.494
+=======
+!ENTRY org.eclipse.jface.text 4 0 2024-12-06 17:24:57.814
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.lsp4e.DocumentContentSynchronizer.<init>(DocumentContentSynchronizer.java:93)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$11(LanguageServerWrapper.java:707)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	... 2 more
+
+!ENTRY org.eclipse.jface.text 4 0 2024-12-06 17:24:57.816
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.lsp4e.DocumentContentSynchronizer.<init>(DocumentContentSynchronizer.java:93)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$11(LanguageServerWrapper.java:707)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	... 2 more
+
+!ENTRY org.eclipse.jface.text 4 0 2024-12-06 17:24:57.817
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.lsp4e.DocumentContentSynchronizer.<init>(DocumentContentSynchronizer.java:93)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$11(LanguageServerWrapper.java:707)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	... 2 more
+
+!ENTRY org.eclipse.jface.text 4 0 2024-12-06 17:24:57.820
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.lsp4e.DocumentContentSynchronizer.<init>(DocumentContentSynchronizer.java:93)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$11(LanguageServerWrapper.java:707)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	... 2 more
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:25:21.633
+!MESSAGE Classpath changed for project: Eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:25:21.634
+!MESSAGE Boot project ADDED: Eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:25:21.635
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:25:21.636
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:25:22.544
+!MESSAGE Classpath changed for project: Eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:25:31.875
+!MESSAGE Classpath changed for project: Eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:25:34.284
+!MESSAGE Classpath changed for project: Eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:25:34.284
+!MESSAGE Boot project REMOVED: Eureka
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-06 17:25:35.955
+!MESSAGE executing callback sts4.classpath.AtQIoXuT FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-12-06 17:25:35.955
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE TimeoutException
 !STACK 0
 java.util.concurrent.TimeoutException
@@ -9074,6 +9285,7 @@ java.util.concurrent.TimeoutException
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
+<<<<<<< HEAD
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-14 17:46:09.486
 !MESSAGE Classpath changed for project: Eureka
 
@@ -9116,6 +9328,186 @@ java.lang.NullPointerException: Cannot invoke "org.springframework.ide.eclipse.b
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+=======
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:26:07.870
+!MESSAGE Classpath changed for project: Eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:26:07.890
+!MESSAGE Boot project ADDED: Eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:26:08.174
+!MESSAGE Classpath changed for project: Eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:26:08.803
+!MESSAGE Classpath changed for project: Gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:26:08.803
+!MESSAGE Boot project ADDED: Gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:26:10.639
+!MESSAGE Classpath changed for project: Gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:26:11.790
+!MESSAGE Classpath changed for project: Gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:26:11.790
+!MESSAGE Boot project REMOVED: Gateway
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-06 17:26:14.459
+!MESSAGE executing callback sts4.classpath.AtQIoXuT FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-12-06 17:26:14.460
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:31)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:26:22.631
+!MESSAGE Classpath changed for project: Gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:26:22.645
+!MESSAGE Boot project ADDED: Gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:26:23.082
+!MESSAGE Classpath changed for project: Gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:26:23.083
+!MESSAGE Classpath changed for project: Identity-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:28:08.758
+!MESSAGE Classpath changed for project: Identity-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:28:16.711
+!MESSAGE Classpath changed for project: Identity-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:28:17.011
+!MESSAGE Classpath changed for project: Identity-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:28:34.509
+!MESSAGE Classpath changed for project: Identity-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:28:34.509
+!MESSAGE Boot project ADDED: Identity-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:31:42.816
+!MESSAGE Classpath changed for project: POJ-Config-Server
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:31:42.816
+!MESSAGE Boot project ADDED: POJ-Config-Server
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:31:43.118
+!MESSAGE Classpath changed for project: POJ-Config-Server
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:31:43.119
+!MESSAGE Classpath changed for project: POJ-Config-Server
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:31:57.887
+!MESSAGE Classpath changed for project: POJ-Config-Server
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:31:57.969
+!MESSAGE Classpath changed for project: POJ-Config-Server
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:32:47.097
+!MESSAGE Classpath changed for project: Rest-Operator
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:32:47.098
+!MESSAGE Boot project ADDED: Rest-Operator
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:32:48.002
+!MESSAGE Classpath changed for project: Rest-Operator
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:32:48.412
+!MESSAGE Classpath changed for project: Rest-Operator
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:32:48.705
+!MESSAGE Classpath changed for project: Rest-Operator
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:32:48.706
+!MESSAGE Boot project REMOVED: Rest-Operator
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:32:54.398
+!MESSAGE Classpath changed for project: Rest-Operator
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:32:54.408
+!MESSAGE Boot project ADDED: Rest-Operator
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:32:54.612
+!MESSAGE Classpath changed for project: Rest-Operator
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:33:27.104
+!MESSAGE Classpath changed for project: Rest-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:33:27.104
+!MESSAGE Boot project ADDED: Rest-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:33:27.563
+!MESSAGE Classpath changed for project: Rest-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:33:27.564
+!MESSAGE Classpath changed for project: Rest-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:33:34.286
+!MESSAGE Classpath changed for project: Rest-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:33:43.327
+!MESSAGE Classpath changed for project: Rest-Technical-Support
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:33:43.328
+!MESSAGE Boot project ADDED: Rest-Technical-Support
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:33:43.896
+!MESSAGE Classpath changed for project: Rest-Technical-Support
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:33:51.694
+!MESSAGE Classpath changed for project: Rest-Technical-Support
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:34:01.526
+!MESSAGE Classpath changed for project: Rest-User
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:34:01.527
+!MESSAGE Boot project ADDED: Rest-User
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:34:01.591
+!MESSAGE Classpath changed for project: Rest-User
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 17:34:05.414
+!MESSAGE Classpath changed for project: Rest-User
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-12-06 18:15:17.600
+!MESSAGE Could not resolve completion items due to timeout after 500 milliseconds in `completionItem/resolve`
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.resolveItem(LSCompletionProposal.java:365)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:331)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:1)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:116)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-12-06 18:16:35.158
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:225)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4083)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3673)
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
@@ -9136,6 +9528,7 @@ java.lang.NullPointerException: Cannot invoke "org.springframework.ide.eclipse.b
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 
+<<<<<<< HEAD
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-14 17:46:32.057
 !MESSAGE Classpath changed for project: Gateway
 
@@ -9401,6 +9794,9 @@ Binding(CTRL+SHIFT+C,
 	org.eclipse.ui.textEditorScope,,,system)
 
 !ENTRY org.eclipse.lsp4e 2 0 2024-12-15 18:36:17.610
+=======
+!ENTRY org.eclipse.lsp4e 2 0 2024-12-06 18:16:35.218
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
 !STACK 0
 java.util.concurrent.TimeoutException
@@ -9457,6 +9853,7 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.lsp4e 4 0 2024-12-15 18:45:32.167
 !MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@d59932f
 !STACK 0
@@ -9513,10 +9910,15 @@ END
 
 !ENTRY org.eclipse.lsp4e 2 0 2024-12-15 18:48:19.635
 !MESSAGE Timeout waiting for data to generate LS hover
+=======
+!ENTRY org.eclipse.lsp4e 2 0 2024-12-06 18:16:35.270
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !STACK 0
 java.util.concurrent.TimeoutException
 	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+<<<<<<< HEAD
 	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
@@ -9590,10 +9992,76 @@ java.lang.UnsupportedOperationException: No language server has registered to ha
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-12-15 19:09:35.664
 !MESSAGE TimeoutException
+=======
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:329)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getContextInformationAutoActivationCharacters(LSContentAssistProcessor.java:374)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isContextInformationAutoActivation(IContentAssistProcessorExtension.java:128)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1252)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:482)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1184)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1169)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:841)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5736)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1184)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1169)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1211)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1207)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1688)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4834)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4712)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3671)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-12-06 18:16:35.286
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-12-06 18:16:35.335
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !STACK 0
 java.util.concurrent.TimeoutException
 	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+<<<<<<< HEAD
 	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:31)
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
@@ -9604,10 +10072,66 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-12-15 19:09:35.687
 !MESSAGE TimeoutException
+=======
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:329)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getCompletionProposalAutoActivationCharacters(LSContentAssistProcessor.java:367)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isCompletionProposalAutoActivation(IContentAssistProcessorExtension.java:115)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1249)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:482)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1184)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1169)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:841)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5736)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1184)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1169)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1211)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1207)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1934)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:5133)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:406)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3671)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-12-06 18:16:35.388
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !STACK 0
 java.util.concurrent.TimeoutException
 	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+<<<<<<< HEAD
 	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:31)
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
@@ -9762,6 +10286,60 @@ Caused by: java.io.IOException: Se está cerrando la canalización
 	... 7 more
 
 !ENTRY org.eclipse.lsp4e 2 0 2024-12-15 20:15:19.031
+=======
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:329)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getContextInformationAutoActivationCharacters(LSContentAssistProcessor.java:374)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isContextInformationAutoActivation(IContentAssistProcessorExtension.java:128)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1252)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:482)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1184)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1169)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:841)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5736)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1184)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1169)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1211)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1207)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1934)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:5133)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:406)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3671)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-12-06 18:16:36.567
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
 !MESSAGE Could not get hover region due to timeout after 1000 milliseconds
 !STACK 0
 java.util.concurrent.TimeoutException
@@ -9798,6 +10376,7 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 
+<<<<<<< HEAD
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-15 20:16:53.021
 !MESSAGE Classpath changed for project: Rest-Support
 
@@ -9941,3 +10520,367 @@ java.lang.UnsupportedOperationException: No language server has registered to ha
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+=======
+!ENTRY org.eclipse.lsp4e 2 0 2024-12-06 18:16:36.622
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:329)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getCompletionProposalAutoActivationCharacters(LSContentAssistProcessor.java:367)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isCompletionProposalAutoActivation(IContentAssistProcessorExtension.java:115)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1249)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$InternalListener.verifyKey(ContentAssistant.java:835)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:482)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1184)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1169)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:841)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5736)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1184)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1169)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1211)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1207)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1934)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:5133)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:406)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3671)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-12-06 18:16:36.674
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:329)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getCompletionProposalAutoActivationCharacters(LSContentAssistProcessor.java:367)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isCompletionProposalAutoActivation(IContentAssistProcessorExtension.java:115)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1249)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:482)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1184)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1169)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:841)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5736)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1184)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1169)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1211)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1207)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1934)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:5133)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:406)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3671)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-12-06 18:16:36.739
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-12-06 18:16:36.960
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request textDocument/completion failed with message: Cannot read properties of undefined (reading 'length')
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request textDocument/completion failed with message: Cannot read properties of undefined (reading 'length')
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.computeCompletionProposals(LSContentAssistProcessor.java:145)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:378)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request textDocument/completion failed with message: Cannot read properties of undefined (reading 'length')
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:313)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	... 1 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-12-06 18:16:37.088
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request textDocument/completion failed with message: Cannot read properties of undefined (reading 'length')
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request textDocument/completion failed with message: Cannot read properties of undefined (reading 'length')
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.computeCompletionProposals(LSContentAssistProcessor.java:145)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:378)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request textDocument/completion failed with message: Cannot read properties of undefined (reading 'length')
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:313)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	... 1 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-12-06 18:16:37.223
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request textDocument/completion failed with message: Cannot read properties of undefined (reading 'length')
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request textDocument/completion failed with message: Cannot read properties of undefined (reading 'length')
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.computeCompletionProposals(LSContentAssistProcessor.java:145)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:378)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request textDocument/completion failed with message: Cannot read properties of undefined (reading 'length')
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:313)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	... 1 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-12-06 18:16:37.374
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request textDocument/completion failed with message: Cannot read properties of undefined (reading 'length')
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request textDocument/completion failed with message: Cannot read properties of undefined (reading 'length')
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.computeCompletionProposals(LSContentAssistProcessor.java:145)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:378)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request textDocument/completion failed with message: Cannot read properties of undefined (reading 'length')
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:313)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	... 1 more
+!SESSION 2024-12-06 18:30:54.640 -----------------------------------------------
+eclipse.buildId=4.23.1.202406150140
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-06 18:31:09.289
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-12-06 18:31:36.010
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-06 18:31:59.330
+!MESSAGE Logback config file: D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-12-06 18:32:05.876
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-12-06 18:32:05.876
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-12-06 18:32:08.282
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-12-06 18:32:08.282
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-06 18:33:04.073
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\USUARIO\Documents\IDESPROGRAMAS\sts-4.23.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\USUARIO\Documents\IDESPROGRAMAS\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\USUARIO\Documents\IDESPROGRAMAS\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\USUARIO\Documents\IDESPROGRAMAS\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/APLICACIONES WEB II/PROYECTO SERVICE DESK-DAWII/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1733527984073
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 18:33:04.097
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-06 18:33:04.186
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 8584
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-06 18:33:38.027
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\USUARIO'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 18:33:52.531
+!MESSAGE Boot project ADDED: Eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 18:33:52.532
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 18:33:52.533
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 18:33:52.534
+!MESSAGE Boot project ADDED: Gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 18:33:52.534
+!MESSAGE Boot project ADDED: Identity-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 18:33:52.535
+!MESSAGE Boot project ADDED: POJ-Config-Server
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 18:33:52.536
+!MESSAGE Boot project ADDED: Rest-Operator
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 18:33:52.536
+!MESSAGE Boot project ADDED: Rest-Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 18:33:52.538
+!MESSAGE Boot project ADDED: Rest-Technical-Support
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 18:33:52.538
+!MESSAGE Boot project ADDED: Rest-User
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-06 18:36:27.781
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\USUARIO\Documents\IDESPROGRAMAS\sts-4.23.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\Users\USUARIO\Documents\IDESPROGRAMAS\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\USUARIO\Documents\IDESPROGRAMAS\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\USUARIO\Documents\IDESPROGRAMAS\sts-4.23.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/APLICACIONES WEB II/PROYECTO SERVICE DESK-DAWII/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1733528187777
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 18:36:27.784
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-12-06 18:36:32.008
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@37507084
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Se está cerrando la canalización
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:551)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Se está cerrando la canalización
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:313)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:171)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy15/jdk.proxy15.$Proxy39.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:549)
+	... 2 more
+Caused by: java.io.IOException: Se está cerrando la canalización
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:367)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+	at java.base/java.io.BufferedOutputStream.implFlush(BufferedOutputStream.java:252)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:240)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 7 more
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-06 18:36:32.010
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-06 18:36:32.015
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 8584
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-06 18:36:32.017
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 7980
+>>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
