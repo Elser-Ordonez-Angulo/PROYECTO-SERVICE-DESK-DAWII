@@ -3,6 +3,7 @@ package com.rest.operator.service;
 import com.rest.operator.feingclient.OperatorFeignService;
 import com.rest.operator.dto.OperacionDTO;
 import com.rest.operator.dto.ReclamoResponseDto;
+import com.rest.operator.dtoRequest.ReclamoRequest;
 import com.rest.operator.model.Operacion;
 import com.rest.operator.repository.IOperacionRepository;
 import com.rest.operator.model.Operadores;
@@ -28,6 +29,8 @@ public class OperacionService {
     private OperadorService operadorService;  // Servicio para obtener Operador
     @Autowired
     private EspecialidadService especialidadService;  // Servicio para obtener Especialidad
+    @Autowired
+    private OperatorFeignService serviceClient;  // Servicio para obtener Especialidad
 
     /**
      * Crear una nueva operación asociando los datos del reclamo
@@ -78,9 +81,16 @@ public class OperacionService {
      */
     public List<OperacionDTO> obtenerOperacionesConDetalles() {
         List<Operacion> operaciones = operacionRepository.findAll();
+        
+        
 
         return operaciones.stream().map(operacion -> {
+        	
+        	int codreclamo = operacion.getCodreclamo();
+        	ReclamoResponseDto reclamoDto=serviceClient.obtenerReclamoPorId(codreclamo);
+        	
             OperacionDTO dto = new OperacionDTO();
+            dto.setIdReclamo(reclamoDto.getIdReclamo());
             dto.setIdOperacion(operacion.getIdOperacion());
             dto.setDescripcion(operacion.getDescripcion());
             dto.setFechaRecepcion(operacion.getFechaRecepcion());
@@ -91,9 +101,7 @@ public class OperacionService {
         }).collect(Collectors.toList());
     }
 
-    /**
-     * Obtener una operación por su ID con detalles del reclamo
-     */
+   
     public OperacionDTO obtenerOperacionPorId(int idOperacion) {
         Optional<Operacion> operacionOptional = operacionRepository.findById(idOperacion);
         if (operacionOptional.isPresent()) {

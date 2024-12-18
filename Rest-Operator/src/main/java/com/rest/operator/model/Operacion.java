@@ -25,8 +25,29 @@ public class Operacion {
     @ManyToOne
     @JoinColumn(name = "idEspecialidad", referencedColumnName = "idEspecialidad", nullable = false)
     private Especialidad especialidad;
-
+    private int codreclamo;
     // Getters y Setters
+    
+    
+    
+    public Operacion() {
+		super();
+	}
+    
+
+	public Operacion(int idOperacion, String descripcion, LocalDate fechaRecepcion, Operadores operador,
+			Especialidad especialidad, int codreclamo) {
+		super();
+		this.idOperacion = idOperacion;
+		this.descripcion = descripcion;
+		this.fechaRecepcion = fechaRecepcion;
+		this.operador = operador;
+		this.especialidad = especialidad;
+		this.codreclamo = codreclamo;
+	}
+
+
+	
 
     public int getIdOperacion() {
         return idOperacion;
@@ -67,4 +88,13 @@ public class Operacion {
     public void setEspecialidad(Especialidad especialidad) {
         this.especialidad = especialidad;
     }
+
+	public int getCodreclamo() {
+		return codreclamo;
+	}
+
+	public void setCodreclamo(int codreclamo) {
+		this.codreclamo = codreclamo;
+	}
+    
 }

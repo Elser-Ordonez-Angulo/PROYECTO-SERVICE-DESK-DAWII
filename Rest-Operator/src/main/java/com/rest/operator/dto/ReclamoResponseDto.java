@@ -3,6 +3,7 @@ package com.rest.operator.dto;
 import java.time.LocalDate;
 
 public class ReclamoResponseDto {
+	
     private int idReclamo;
     private int codUsuario;
     private int dniUsuario;
