@@ -7,4 +7,8 @@
     <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="com.rest.operator.dto.ReclamoResponseDto"/>
+    <fullyQualifiedTypeName name="com.rest.operator.dto.UsuarioDto"/>
+    <fullyQualifiedTypeName name="com.rest.operator.dtoRequest.ReclamoRequest"/>
+    <fullyQualifiedTypeName name="com.rest.operator.feingclient.OperatorFeignService"/>
 </qualifiedTypeNameHistroy>

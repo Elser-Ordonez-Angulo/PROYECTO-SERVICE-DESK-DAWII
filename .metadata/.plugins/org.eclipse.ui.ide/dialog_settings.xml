@@ -1,67 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<list key="installedFeatures">
-		<item value="org.eclipse.buildship:3.1.9.v20240115-1636"/>
-		<item value="org.eclipse.egit.gitflow.feature:6.10.0.202406032230-r"/>
-		<item value="org.eclipse.egit:6.10.0.202406032230-r"/>
-		<item value="org.eclipse.emf.common:2.31.0.v20240314-0928"/>
-		<item value="org.eclipse.emf.ecore:2.37.0.v20240203-0859"/>
-		<item value="org.eclipse.epp.mpc:1.10.3.v20240228-1000"/>
-		<item value="org.eclipse.help:2.3.1800.v20240601-0610"/>
-		<item value="org.eclipse.jdt:3.19.500.v20240601-0610"/>
-		<item value="org.eclipse.jgit.gpg.bc:6.10.0.202406032230-r"/>
-		<item value="org.eclipse.jgit.http.apache:6.10.0.202406032230-r"/>
-		<item value="org.eclipse.jgit.lfs:6.10.0.202406032230-r"/>
-		<item value="org.eclipse.jgit.ssh.apache:6.10.0.202406032230-r"/>
-		<item value="org.eclipse.jgit:6.10.0.202406032230-r"/>
-		<item value="org.eclipse.jst.common.fproj.enablement.jdt:3.30.0.v202405122323"/>
-		<item value="org.eclipse.justj.openjdk.hotspot.jre.full:21.0.3.v20240426-1530"/>
-		<item value="org.eclipse.m2e.feature:2.6.1.20240602-2342"/>
-		<item value="org.eclipse.m2e.logback.feature:2.6.1.20240411-1743"/>
-		<item value="org.eclipse.m2e.wtp.feature:1.6.1.20231024-1618"/>
-		<item value="org.eclipse.mylyn.wikitext.feature:4.3.0.v20240602-0603"/>
-		<item value="org.eclipse.pde:3.15.400.v20240601-0610"/>
-		<item value="org.eclipse.platform:4.32.0.v20240601-0610"/>
-		<item value="org.eclipse.rcp:4.32.0.v20240601-0610"/>
-		<item value="org.eclipse.tm.terminal.connector.ssh.feature:11.6.0.202403071917"/>
-		<item value="org.eclipse.tm.terminal.control.feature:11.6.0.202403071917"/>
-		<item value="org.eclipse.tm.terminal.feature:11.6.0.202403071917"/>
-		<item value="org.eclipse.tm.terminal.view.feature:11.6.0.202403071917"/>
-		<item value="org.eclipse.userstorage:1.2.0.v20210517-0327"/>
-		<item value="org.eclipse.wst.common.fproj:3.7.4.v202308161955"/>
-		<item value="org.jboss.tools.m2e.wro4j.feature:1.2.1.202301111328"/>
-		<item value="org.sonatype.m2e.egit.feature:0.17.0.202209271423"/>
-	</list>
 	<section name="SmartImportWizard">
 		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
 		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
-<<<<<<< HEAD
 			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Support"/>
-			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Operator"/>
-			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Technical-Support"/>
-			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\POJ-Config-Server"/>
-=======
->>>>>>> 5687db272e58cded0abf841ddef1f3c85812fef9
-			<item value="D:\PjS13\Identity-Service\Identity-Service"/>
-			<item value="E:\NIVEL 06\DESARROLLO DE APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\POJ-Config-Server"/>
-			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\POJ-Config-Server\POJ-Config-Server"/>
-			<item value="E:\NIVEL 06\DESARROLLO DE APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-User"/>
-			<item value="E:\NIVEL 06\DESARROLLO DE APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Technical-Support"/>
-			<item value="E:\NIVEL 06\DESARROLLO DE APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Service"/>
-			<item value="E:\NIVEL 06\DESARROLLO DE APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Operator"/>
-			<item value="E:\NIVEL 06\DESARROLLO DE APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Developers"/>
-			<item value="E:\NIVEL 06\DESARROLLO DE APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Proj-Gateway"/>
-			<item value="E:\NIVEL 06\DESARROLLO DE APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Gateway"/>
-			<item value="E:\NIVEL 06\DESARROLLO DE APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Eureka"/>
-			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-Service"/>
-			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Proj-RestMenu"/>
-			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Rest-User"/>
-			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Gateway"/>
-			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Proj-Gateway"/>
-			<item value="D:\APLICACIONES WEB II\PROYECTO SERVICE DESK-DAWII\Eureka"/>
 		</list>
 		<section name="SmartImportWizard.dialogBounds">
 			<item key="DIALOG_X_ORIGIN" value="249"/>
