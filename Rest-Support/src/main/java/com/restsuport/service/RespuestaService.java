@@ -1,14 +1,16 @@
 package com.restsuport.service;
 
-import com.restsuport.dto.OperacionDTO;
-import com.restsuport.feingClient.OperacionClient;
-import com.restsuport.model.Respuesta;
-import com.restsuport.repository.IRespuestaRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
+import com.restsuport.dto.OperacionDTO;
+import com.restsuport.feingClient.OperacionClient;
+import com.restsuport.model.Developer;
+import com.restsuport.model.TechnicalSupport;
+import com.restsuport.repository.IDeveloperRepository;
+import com.restsuport.repository.ITechnicalSupportRepository;
+
+import java.util.Optional;
 
 @Service
 public class RespuestaService {
@@ -17,49 +19,51 @@ public class RespuestaService {
     private OperacionClient operacionClient;
 
     @Autowired
-    private IRespuestaRepository respuestaRepository;
+    private IDeveloperRepository developerRepository;
 
-    /**
-     * Método para crear una respuesta asociada a una operación.
-     * @param descripcionRespuesta La descripción de la respuesta.
-     * @param idOperacion El ID de la operación asociada.
-     * @return La respuesta creada.
-     */
-    public Respuesta crearRespuesta(String descripcionRespuesta, int idOperacion) {
-        // Llamar al servicio del microservicio Rest-Operator para obtener la operación
+    @Autowired
+    private ITechnicalSupportRepository technicalSupportRepository;
+
+    // Crear respuesta y asociarla con la operación desde Rest-Operator
+    public String crearRespuesta(String descripcionRespuesta, int idOperacion, String tipoEspecialista, int idEspecialista) {
+        // Obtener operación desde Rest-Operator utilizando Feign Client
         OperacionDTO operacionDTO = operacionClient.getOperacionById(idOperacion);
 
-        // Validar si la operación existe
         if (operacionDTO == null) {
             throw new RuntimeException("Operación no encontrada para el id: " + idOperacion);
         }
 
-        // Crear la respuesta con la operación obtenida
-        Respuesta respuesta = new Respuesta(
-                descripcionRespuesta,
-                LocalDate.now(),
-                operacionDTO.getIdOperacion(),
-                operacionDTO.getDescripcion()
-        );
+        // Crear la respuesta dependiendo del tipo de especialista
+        switch (tipoEspecialista.toLowerCase()) {
+            case "developer":
+                Optional<Developer> developer = developerRepository.findById(idEspecialista);
+                if (developer.isPresent()) {
+                    Developer dev = developer.get();
+                    dev.setRespuesta(descripcionRespuesta);
+                    developerRepository.save(dev);
+                    return "Respuesta de Developer guardada";
+                } else {
+                    return "Developer no encontrado";
+                }
 
-        // Guardar la respuesta en la base de datos
-        return respuestaRepository.save(respuesta);
+            case "technicalsupport":
+                Optional<TechnicalSupport> technicalSupport = technicalSupportRepository.findById(idEspecialista);
+                if (technicalSupport.isPresent()) {
+                    TechnicalSupport techSupport = technicalSupport.get();
+                    techSupport.setRespuesta(descripcionRespuesta);
+                    technicalSupportRepository.save(techSupport);
+                    return "Respuesta de Technical Support guardada";
+                } else {
+                    return "Technical Support no encontrado";
+                }
+
+            default:
+                return "Tipo de especialista no reconocido";
+        }
     }
 
-    /**
-     * Obtener todas las respuestas almacenadas.
-     * @return Una lista de respuestas.
-     */
-    public Iterable<Respuesta> obtenerTodasLasRespuestas() {
-        return respuestaRepository.findAll();
-    }
-
-    /**
-     * Obtener una respuesta por su ID.
-     * @param idRespuesta El ID de la respuesta.
-     * @return La respuesta solicitada.
-     */
-    public Respuesta obtenerRespuestaPorId(int idRespuesta) {
-        return respuestaRepository.findById(idRespuesta).orElse(null);
+    // Listar todas las operaciones
+    public Iterable<OperacionDTO> listarOperaciones() {
+        return operacionClient.getAllOperaciones();
     }
 }
