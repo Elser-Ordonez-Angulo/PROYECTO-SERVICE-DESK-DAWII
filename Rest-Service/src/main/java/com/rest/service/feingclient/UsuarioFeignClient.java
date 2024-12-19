@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.rest.service.dto.UsuarioDto;
 
 // Define el microservicio que consumirás
-@FeignClient(name = "rest-user", url = "http://localhost:9004/api/usuario")
+@FeignClient(name = "rest-user", url = "http://localhost:9002/api/usuario")
 public interface UsuarioFeignClient {
     
     // Método para obtener usuario por DNI
